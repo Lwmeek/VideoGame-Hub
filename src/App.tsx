@@ -8,14 +8,18 @@ function App() {
 		<Grid
 			templateAreas={{
 				base: `"nav" "main"`, // mobile view
-				lg: `"nav nav" "aside main"`, // computer view
+				lg: `"nav nav" "aside main"` // computer view
+			}}
+			templateColumns={{
+				base: "1fr",
+				lg: "200px 1fr"
 			}}
 		>
 			<GridItem area="nav">
 				<NavBar />
 			</GridItem>
 			<Show>
-				<GridItem area="aside" bg="gold">
+				<GridItem area="aside" bg="gold" paddingX={5}>
 					<GenreList />
 				</GridItem>
 			</Show>
