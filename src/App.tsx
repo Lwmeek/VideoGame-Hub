@@ -12,7 +12,7 @@ function App() {
 			}}
 		>
 			<GridItem area="nav">
-				<NavBar/>
+				<NavBar />
 			</GridItem>
 			<Show>
 				<GridItem area="aside" bg="gold">
